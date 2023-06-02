@@ -18,8 +18,8 @@ class CoinRepositoryImpl @Inject constructor(
         return api.getCoins()
     }
 
-    override suspend fun getCoinById(id: String): CoinDetailDto {
-        return api.getCoinById(id)
+    override suspend fun getCoinById(coinId: String): CoinDetailDto {
+        return api.getCoinById(coinId)
     }
 
 }
