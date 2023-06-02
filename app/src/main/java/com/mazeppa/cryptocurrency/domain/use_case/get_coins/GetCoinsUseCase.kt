@@ -2,6 +2,7 @@ package com.mazeppa.cryptocurrency.domain.use_case.get_coins
 
 import com.mazeppa.cryptocurrency.common.Resource
 import com.mazeppa.cryptocurrency.data.remote.dto.coin.toCoin
+import com.mazeppa.cryptocurrency.data.repository.CoinRepositoryImpl
 import com.mazeppa.cryptocurrency.domain.model.Coin
 import com.mazeppa.cryptocurrency.domain.repository.CoinRepository
 import kotlinx.coroutines.flow.Flow
@@ -18,6 +19,8 @@ class GetCoinsUseCase @Inject constructor(
     //replaceable
     private val repository: CoinRepository
 ) {
+
+//    private val repository: CoinRepository = CoinRepositoryImpl()
 
     operator fun invoke(): Flow<Resource<List<Coin>>> = flow {
         try {
