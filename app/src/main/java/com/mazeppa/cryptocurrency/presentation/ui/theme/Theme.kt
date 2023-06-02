@@ -1,4 +1,4 @@
-package com.mazeppa.cryptocurrency.ui.theme
+package com.mazeppa.cryptocurrency.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
